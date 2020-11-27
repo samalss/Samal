@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="700.0" style="-fx-background-color: DEB887;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Edit">
+    <children>
+        <ImageView fitHeight="39.0" fitWidth="43.0" layoutX="654.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pictures/111.jpg" />
+            </image>
+        </ImageView>
+        <MenuButton fx:id="menu" layoutX="548.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Profile">
+            <items>
+                <MenuItem fx:id="buyProducts" mnemonicParsing="false" onAction="#myProfileWindow" text="My profile" />
+                <MenuItem fx:id="settings" mnemonicParsing="false" onAction="#buyProductsWindow" text="Buy products" />
+                <MenuItem fx:id="Basket" mnemonicParsing="false" onAction="#BasketWindow" text="Shopping basket" />
+                <MenuItem fx:id="sign_out" mnemonicParsing="false" onAction="#Sign_out_menu" text="Sign out" />
+            </items>
+            <font>
+                <Font name="Tw Cen MT" size="14.0" />
+            </font>
+        </MenuButton>
+        <AnchorPane layoutY="48.0" prefHeight="357.0" prefWidth="700.0" style="-fx-background-color: FFFFFF;">
+            <children>
+                <Label layoutX="226.0" layoutY="90.0" text="Name">
+                    <font>
+                        <Font name="Tw Cen MT" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="212.0" layoutY="134.0" text="Surname">
+                    <font>
+                        <Font name="Tw Cen MT" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="167.0" layoutY="188.0" text="New Password">
+                    <font>
+                        <Font name="Tw Cen MT" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="editButton" layoutX="179.0" layoutY="246.0" mnemonicParsing="false" onAction="#edit" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: DEB887;" text="EDIT">
+                    <font>
+                        <Font name="Tw Cen MT" size="16.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="nameField" alignment="CENTER" layoutX="299.0" layoutY="87.0" prefHeight="28.0" prefWidth="193.0" style="-fx-background-color: FFFFFF; -fx-border-color: DEB887; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="surnameField" alignment="CENTER" layoutX="299.0" layoutY="132.0" prefHeight="28.0" prefWidth="193.0" style="-fx-background-color: FFFFFF; -fx-border-color: DEB887; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="backButon" layoutX="432.0" layoutY="246.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: DEB887;" text="BACK">
+               <font>
+                  <Font name="Tw Cen MT" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="273.0" layoutY="296.0" prefHeight="30.0" prefWidth="246.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordField" alignment="CENTER" layoutX="300.0" layoutY="185.0" prefHeight="28.0" prefWidth="193.0" style="-fx-background-color: FFFFFF; -fx-border-color: DEB887; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
